@@ -30,3 +30,4 @@ class Crow extends Bird {
 
 var a = new Crow();
 a.setName = "Kaka"
+console.log(a.getName);
