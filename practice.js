@@ -1,31 +1,24 @@
 class Animal{
 constructor(){
+    console.log('called 1');
   this.canFly = 'maybe'
   this.alive = true;
-  }
-  call(){
-    console.log('called 1');
-  }
+}
 }
 
 class Bird extends Animal{
   constructor(){
     super();
+      console.log('called 2');
       this.canFly = true;
-  }
-  call(){
-    console.log('called 2');
   }
 }
 
 class Crow extends Bird {
   constructor(){
     super();
-    super.call()
+      console.log('called 3');
       this.color = 'black';
-  }
-  call(){
-    console.log('called 3');
   }
   set setName(name){
     this.name = name;
@@ -37,4 +30,3 @@ class Crow extends Bird {
 
 var a = new Crow();
 a.setName = "Kaka"
-console.log(a.call());
